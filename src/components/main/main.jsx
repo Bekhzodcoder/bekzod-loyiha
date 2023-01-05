@@ -13,7 +13,7 @@ const Main = () => {
 
 
     useEffect(()=>{
-        ApiService.fetching('search').then(data => setVideos(data))
+        ApiService.fetching(`search?part=snippet&q=${selectedCategory}`).then(data => setVideos(data.items))
     }, [])
 
     return (
