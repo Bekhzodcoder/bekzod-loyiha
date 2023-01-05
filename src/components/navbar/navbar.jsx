@@ -1,8 +1,8 @@
-import React from 'react';
-import { Stack, Box } from '@mui/material';
-import {colors} from '../../contants/colors';
-import { Link } from 'react-router-dom';
-import {SearchBar} from '../'
+import { Stack, Box } from '@mui/material'
+import { Link } from 'react-router-dom'
+import { logo } from '../../constants'
+import { colors } from '../../constants/colors'
+import { Searchbar } from '../'
 
 const Navbar = () => {
     return (
@@ -15,7 +15,7 @@ const Navbar = () => {
             <Link to={'/'}>
                 <img src={require('../../components/Bekhzod.jpg')} width="200" style={{height:"60px", objectFit:"cover"}} />
             </Link>
-            <SearchBar />
+            <Searchbar />
             <Box />
         </Stack>
     );
